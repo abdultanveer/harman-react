@@ -11,13 +11,31 @@ export class Counter extends Component {
     }
 //if you dont use setState method UI will not re render
     increment() {
+        // this.setState(
+        // {count: this.state.count +1},
+        //  () =>{  //callback that will be called after the state is set
+        //     console.log("call back value is--",this.state.count)
+        // }
+        // )
+    
         this.setState(
-        {count: this.state.count +1},
-         () =>{  //callback that will be called after the state is set
-            console.log("call back value is--",this.state.count)
-        }
+            prevState => (
+                {
+                    count: prevState.count +1
+                }
+            )
         )
-        console.log(this.state.count) //synchronous call -- this gets called before the state is set
+         console.log(this.state.count) //synchronous call -- this gets called before the state is set
+       
+    }
+
+
+    incrementFive(){
+        this.increment()
+        this.increment()
+        this.increment()
+        this.increment()
+        this.increment()
     }
 
     render() {
@@ -26,7 +44,7 @@ export class Counter extends Component {
                 <div>Counter -- {this.state.count}</div>
                 <button
                     onClick = {
-                        () => this.increment()
+                        () => this.incrementFive()
                     }
                 >increment</button>
             </div>
