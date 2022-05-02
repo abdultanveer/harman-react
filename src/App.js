@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
     
-    <Greet name="ansari" alias="ans" />
+    <Greet name="abdul" alias="abd" />
 
     
     </div>
