@@ -7,8 +7,15 @@ function App() {
   return (
     <div className="App">
     
-      <Greet/>
-      <Welcome name="abdul" alias =" ansari"/>
+      <Greet name ="abdul" alias ="tan">
+          <p>this is children</p>
+      </Greet>
+      <Greet name ="ansari" alias ="an">
+        <button>click me</button>
+      </Greet>
+      <Greet name ="harman" alias ="hmm"/>
+
+     {/* <Welcome name="abdul" alias =" ansari"/> */}
     </div>
   );
 }
