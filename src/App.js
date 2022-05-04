@@ -1,10 +1,6 @@
 import './App.css';
-import ClassCounterOne from './components/hooks/ClassCounterOne';
-import HookCounterOne from './components/hooks/HookCounterOne';
-
-
-import HookCountertwo from './components/hooks/HookCountertwo';
-import LifeCycleA from './components/lifecyclemethods/LifeCycleA';
+import ClassMouse from './components/hooks/ClassMouse';
+import HookMouse from './components/hooks/HookMouse';
 
 
 function App() {
@@ -12,7 +8,8 @@ function App() {
 
   return (
     <div className="App">
-    <HookCounterOne/>
+    <HookMouse/>
+
 
      
 
