@@ -6,7 +6,7 @@ function HookCountertwo() {
 
     const incrementFive = () => {
         for (let i = 0; i < 5; i++) {
-            setCount(count + 1)
+            setCount(prevCount => prevCount+1)
         }
     }
 
