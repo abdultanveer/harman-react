@@ -1,4 +1,6 @@
 import './App.css';
+import ClassCounterOne from './components/hooks/ClassCounterOne';
+import HookCounterOne from './components/hooks/HookCounterOne';
 
 
 import HookCountertwo from './components/hooks/HookCountertwo';
@@ -11,7 +13,7 @@ function App() {
   return (
     <div className="App">
 
-     <LifeCycleA/>
+     <HookCounterOne/>
 
 
     </div>
