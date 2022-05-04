@@ -18,13 +18,37 @@ export class LifeCycleA extends Component {
         return null
     }
 
+    shouldComponentUpdate() {
+        console.log("shouldComponentUpdate A")
+        return true
+    }
+
+    getSnapshotBeforeUpdate(prevProps, prevState){
+        console.log("getSnapshotBeforeUpdate A")
+        return null
+
+    }
+
+    componentDidUpdate(){
+        console.log("componentdidUpdate A")
+
+    }
+
+    changeState = () => {
+        this.setState(
+            {
+                name: 'abdul react'
+            }
+        )
+    }
 
     render() {
         console.log("lifecycle A render")
 
         return (
             <div>
-                <div>LifeCycleA</div>
+                <div>LifeCycleA {this.state.name}</div>
+                <button onClick={this.changeState}>change state</button>
                 <LifeCycleB/>
             </div>
         )
