@@ -1,7 +1,8 @@
 import './App.css';
-import ClassMouse from './components/hooks/ClassMouse';
-import HookMouse from './components/hooks/HookMouse';
-import MouseContainer from './components/hooks/MouseContainer';
+import React from 'react'
+
+import DataFetching from './components/hooks/DataFetching';
+
 
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
 
   return (
     <div className="App">
-    <MouseContainer/>
+    <DataFetching/>
 
 
      
